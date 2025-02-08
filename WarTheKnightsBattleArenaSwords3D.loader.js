@@ -33,8 +33,3 @@ function createUnityInstance(t,n,d){function c(e,t){if(!c.aborted&&n.showBanner)
         });
     };
 })();
-
-            }
-        });
-    };
-})();
