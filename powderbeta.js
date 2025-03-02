@@ -863,7 +863,7 @@ function createExportWrapper(name, fixedasm) {
 
 var wasmBinaryFile;
 
-wasmBinaryFile = "powderbeta.wasm";
+wasmBinaryFile = "https://cdn.jsdelivr.net/gh/Stinkalistic/junk@main/powderbeta.wasm";
 
 if (!isDataURI(wasmBinaryFile)) {
  wasmBinaryFile = locateFile(wasmBinaryFile);
@@ -4502,7 +4502,7 @@ var PThread = {
  },
  allocateUnusedWorker: function() {
   var worker;
-  var pthreadMainJs = locateFile("powderbeta.worker.js");
+  var pthreadMainJs = locateFile("https://cdn.jsdelivr.net/gh/Stinkalistic/junk@main/powderbeta.worker.js");
   worker = new Worker(pthreadMainJs);
   PThread.unusedWorkers.push(worker);
  },
